@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ProductDaoTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ProductDaoTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; ProductDaoTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.541s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">delete</td>
+<td>0.064s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">findAll</td>
+<td>0.024s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getProductById</td>
+<td>0.401s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">saveProduct</td>
+<td>0.026s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">update</td>
+<td>0.026s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Hibernate: select this_.id as id1_0_0_, this_.description as descript2_0_0_, this_.price as price3_0_0_, this_.type as type5_0_0_, this_.size as size4_0_0_ from Product this_ where this_.id=?
+Hibernate: select product0_.id as id1_0_0_, product0_.description as descript2_0_0_, product0_.price as price3_0_0_, product0_.type as type5_0_0_, product0_.size as size4_0_0_ from Product product0_ where product0_.id=?
+Hibernate: delete from Product where id=?
+Hibernate: select this_.id as id1_0_0_, this_.description as descript2_0_0_, this_.price as price3_0_0_, this_.type as type5_0_0_, this_.size as size4_0_0_ from Product this_ where this_.id=?
+Hibernate: select this_.id as id1_0_0_, this_.description as descript2_0_0_, this_.price as price3_0_0_, this_.type as type5_0_0_, this_.size as size4_0_0_ from Product this_
+Hibernate: update Product set description=?, price=?, type=?, size=? where id=?
+Hibernate: select this_.id as id1_0_0_, this_.description as descript2_0_0_, this_.price as price3_0_0_, this_.type as type5_0_0_, this_.size as size4_0_0_ from Product this_ where this_.id=?
+Hibernate: select this_.id as id1_0_0_, this_.description as descript2_0_0_, this_.price as price3_0_0_, this_.type as type5_0_0_, this_.size as size4_0_0_ from Product this_ where this_.id=?
+Hibernate: select this_.id as id1_0_0_, this_.description as descript2_0_0_, this_.price as price3_0_0_, this_.type as type5_0_0_, this_.size as size4_0_0_ from Product this_ where this_.id=?
+Hibernate: insert into Product (description, price, type, size) values (?, ?, ?, ?)
+Hibernate: select this_.id as id1_0_0_, this_.description as descript2_0_0_, this_.price as price3_0_0_, this_.type as type5_0_0_, this_.size as size4_0_0_ from Product this_ where this_.id=?
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Mar 11, 2015 2:59:11 PM org.springframework.test.context.support.DefaultTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+INFO: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+Mar 11, 2015 2:59:11 PM org.springframework.test.context.support.DefaultTestContextBootstrapper getTestExecutionListeners
+INFO: Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@e830ed5, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3e42c964, org.springframework.test.context.support.DirtiesContextTestExecutionListener@12b3e42b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6048cca4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4b73545e]
+Mar 11, 2015 2:59:12 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from URL [file:src/main/webapp/WEB-INF/test-mvc-servlet.xml]
+Mar 11, 2015 2:59:12 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from URL [file:src/main/webapp/WEB-INF/applicationContext-persistence.xml]
+Mar 11, 2015 2:59:12 PM org.springframework.context.support.GenericApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.GenericApplicationContext@82c61be: startup date [Wed Mar 11 14:59:12 CLST 2015]; root of context hierarchy
+Mar 11, 2015 2:59:13 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager &lt;clinit&gt;
+INFO: HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+Mar 11, 2015 2:59:13 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {4.3.8.Final}
+Mar 11, 2015 2:59:13 PM org.hibernate.cfg.Environment &lt;clinit&gt;
+INFO: HHH000206: hibernate.properties not found
+Mar 11, 2015 2:59:13 PM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+Mar 11, 2015 2:59:14 PM org.hibernate.dialect.Dialect &lt;init&gt;
+INFO: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+Mar 11, 2015 2:59:14 PM org.hibernate.engine.jdbc.internal.LobCreatorBuilder useContextualLobCreation
+INFO: HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+Mar 11, 2015 2:59:15 PM org.hibernate.engine.transaction.internal.TransactionFactoryInitiator initiateService
+INFO: HHH000399: Using default transaction strategy (direct JDBC transactions)
+Mar 11, 2015 2:59:15 PM org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory &lt;init&gt;
+INFO: HHH000397: Using ASTQueryTranslatorFactory
+Mar 11, 2015 2:59:16 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping registerHandlerMethod
+INFO: Mapped &quot;{[/products/{id}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}&quot; onto public nisum.restResources.ProductResource nisum.controller.ProductController.getProductById(int) throws java.lang.Exception
+Mar 11, 2015 2:59:16 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping registerHandlerMethod
+INFO: Mapped &quot;{[/products],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}&quot; onto public nisum.restResources.ProductResources nisum.controller.ProductController.getProductList() throws java.lang.Exception
+Mar 11, 2015 2:59:16 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping registerHandlerMethod
+INFO: Mapped &quot;{[/products/{id}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}&quot; onto public void nisum.controller.ProductController.deleteProductById(int) throws java.io.IOException
+Mar 11, 2015 2:59:16 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping registerHandlerMethod
+INFO: Mapped &quot;{[/products],methods=[PUT],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}&quot; onto public void nisum.controller.ProductController.updateProduct(nisum.restResources.ProductIn) throws java.io.IOException
+Mar 11, 2015 2:59:16 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping registerHandlerMethod
+INFO: Mapped &quot;{[/products],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}&quot; onto public void nisum.controller.ProductController.saveProduct(nisum.restResources.ProductIn,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+Mar 11, 2015 2:59:16 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping registerHandlerMethod
+INFO: Mapped &quot;{[/productTypes/{id}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}&quot; onto public nisum.restResources.ProductTypeResource nisum.controller.ProductTypeController.getProductTypeById(int) throws java.lang.Exception
+Mar 11, 2015 2:59:16 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping registerHandlerMethod
+INFO: Mapped &quot;{[/productTypes/],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}&quot; onto public nisum.restResources.ProductTypeResources nisum.controller.ProductTypeController.getProductTypeList() throws java.lang.Exception
+Mar 11, 2015 2:59:16 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping registerHandlerMethod
+INFO: Mapped &quot;{[/productTypes/],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}&quot; onto public void nisum.controller.ProductTypeController.saveProductType(nisum.restResources.ProductTypeIn,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+Mar 11, 2015 2:59:16 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping registerHandlerMethod
+INFO: Mapped &quot;{[/productTypes/],methods=[PUT],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}&quot; onto public void nisum.controller.ProductTypeController.updateProductType(nisum.restResources.ProductTypeIn) throws java.io.IOException
+Mar 11, 2015 2:59:16 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping registerHandlerMethod
+INFO: Mapped &quot;{[/productTypes/{id}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}&quot; onto public void nisum.controller.ProductTypeController.deleteProductTypeById(int) throws java.lang.Exception
+Mar 11, 2015 2:59:16 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter initControllerAdviceCache
+INFO: Looking for @ControllerAdvice: org.springframework.context.support.GenericApplicationContext@82c61be: startup date [Wed Mar 11 14:59:12 CLST 2015]; root of context hierarchy
+Mar 11, 2015 2:59:16 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter initControllerAdviceCache
+INFO: Looking for @ControllerAdvice: org.springframework.context.support.GenericApplicationContext@82c61be: startup date [Wed Mar 11 14:59:12 CLST 2015]; root of context hierarchy
+Mar 11, 2015 2:59:16 PM org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver initExceptionHandlerAdviceCache
+INFO: Detected @ExceptionHandler methods in restExceptionHandler
+Mar 11, 2015 2:59:17 PM org.springframework.orm.hibernate4.HibernateTransactionManager afterPropertiesSet
+INFO: Using DataSource [org.apache.commons.dbcp2.BasicDataSource@5bd513cf] of Hibernate SessionFactory for HibernateTransactionManager
+Mar 11, 2015 2:59:17 PM org.springframework.web.servlet.handler.SimpleUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/swagger-ui/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+Mar 11, 2015 2:59:17 PM org.springframework.test.context.transaction.TransactionContext startTransaction
+INFO: Began transaction (1) for test context [DefaultTestContext@1b0eada1 testClass = ProductDaoTest, testInstance = ProductDaoTest@60a932e7, testMethod = getProductById@ProductDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@44d0d45 testClass = ProductDaoTest, locations = '{file:src/main/webapp/WEB-INF/test-mvc-servlet.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@5ea22f37]; rollback [true]
+Mar 11, 2015 2:59:17 PM org.springframework.test.context.transaction.TransactionContext endTransaction
+INFO: Rolled back transaction for test context [DefaultTestContext@1b0eada1 testClass = ProductDaoTest, testInstance = ProductDaoTest@60a932e7, testMethod = getProductById@ProductDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@44d0d45 testClass = ProductDaoTest, locations = '{file:src/main/webapp/WEB-INF/test-mvc-servlet.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+Mar 11, 2015 2:59:17 PM org.springframework.test.context.transaction.TransactionContext startTransaction
+INFO: Began transaction (1) for test context [DefaultTestContext@1b0eada1 testClass = ProductDaoTest, testInstance = ProductDaoTest@37cc93a9, testMethod = delete@ProductDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@44d0d45 testClass = ProductDaoTest, locations = '{file:src/main/webapp/WEB-INF/test-mvc-servlet.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@5ea22f37]; rollback [true]
+Mar 11, 2015 2:59:17 PM org.springframework.test.context.transaction.TransactionContext endTransaction
+INFO: Rolled back transaction for test context [DefaultTestContext@1b0eada1 testClass = ProductDaoTest, testInstance = ProductDaoTest@37cc93a9, testMethod = delete@ProductDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@44d0d45 testClass = ProductDaoTest, locations = '{file:src/main/webapp/WEB-INF/test-mvc-servlet.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+Mar 11, 2015 2:59:17 PM org.springframework.test.context.transaction.TransactionContext startTransaction
+INFO: Began transaction (1) for test context [DefaultTestContext@1b0eada1 testClass = ProductDaoTest, testInstance = ProductDaoTest@793ba673, testMethod = findAll@ProductDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@44d0d45 testClass = ProductDaoTest, locations = '{file:src/main/webapp/WEB-INF/test-mvc-servlet.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@5ea22f37]; rollback [true]
+Mar 11, 2015 2:59:17 PM org.springframework.test.context.transaction.TransactionContext endTransaction
+INFO: Rolled back transaction for test context [DefaultTestContext@1b0eada1 testClass = ProductDaoTest, testInstance = ProductDaoTest@793ba673, testMethod = findAll@ProductDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@44d0d45 testClass = ProductDaoTest, locations = '{file:src/main/webapp/WEB-INF/test-mvc-servlet.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+Mar 11, 2015 2:59:17 PM org.springframework.test.context.transaction.TransactionContext startTransaction
+INFO: Began transaction (1) for test context [DefaultTestContext@1b0eada1 testClass = ProductDaoTest, testInstance = ProductDaoTest@3f677311, testMethod = update@ProductDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@44d0d45 testClass = ProductDaoTest, locations = '{file:src/main/webapp/WEB-INF/test-mvc-servlet.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@5ea22f37]; rollback [true]
+Mar 11, 2015 2:59:17 PM org.springframework.test.context.transaction.TransactionContext endTransaction
+INFO: Rolled back transaction for test context [DefaultTestContext@1b0eada1 testClass = ProductDaoTest, testInstance = ProductDaoTest@3f677311, testMethod = update@ProductDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@44d0d45 testClass = ProductDaoTest, locations = '{file:src/main/webapp/WEB-INF/test-mvc-servlet.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+Mar 11, 2015 2:59:17 PM org.springframework.test.context.transaction.TransactionContext startTransaction
+INFO: Began transaction (1) for test context [DefaultTestContext@1b0eada1 testClass = ProductDaoTest, testInstance = ProductDaoTest@147e0141, testMethod = saveProduct@ProductDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@44d0d45 testClass = ProductDaoTest, locations = '{file:src/main/webapp/WEB-INF/test-mvc-servlet.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@5ea22f37]; rollback [true]
+Mar 11, 2015 2:59:17 PM org.springframework.test.context.transaction.TransactionContext endTransaction
+INFO: Rolled back transaction for test context [DefaultTestContext@1b0eada1 testClass = ProductDaoTest, testInstance = ProductDaoTest@147e0141, testMethod = saveProduct@ProductDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@44d0d45 testClass = ProductDaoTest, locations = '{file:src/main/webapp/WEB-INF/test-mvc-servlet.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>Generated by 
+<a href="http://www.gradle.org">Gradle 2.1</a> at Mar 11, 2015 2:59:18 PM</p>
+</div>
+</div>
+</body>
